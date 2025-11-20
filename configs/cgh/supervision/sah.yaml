@@ -1,0 +1,5 @@
+name: "sah"
+min_num_subapertures_to_sample: 4
+max_num_subapertures_to_sample: 16  # must be <= total_num_subapertures**2
+offset_dists: [-0.003, -0.002, -0.001, 0.0, 0.001, 0.002, 0.003]
+minibatch_size: 25

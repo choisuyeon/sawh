@@ -1,0 +1,32 @@
+defaults:
+  - supervision: 2d
+  - lf_data: road
+
+lr: 0.3
+num_iters: 1000
+joint_opt: false  # false: separate, true: joint
+roi_res: [960, 1680]
+init_type: "rand_tmnh"
+init_uniform_phase_range: 6.28
+method: "gd"
+rank: 1
+out_path: "results"
+
+# Data loader parameters
+data_path: "data"
+data_type: "2d"
+crop_to_roi: true
+linear_target: false
+data_shuffle: true
+data_mask_target: false
+image_res: [1480, 2320]
+target_flipud: false  # if true, flip the target vertically
+scaling_factor: "min_mse"
+
+# hardware parameters
+focal_length_eyepiece: 0.020
+mems_step_yx: [[0.0, 0.0]]  # a list of steered angles in MEMS units (not in radians), for cgh
+steered_angle: null
+
+# offset_dists_eval is used for saving focal stack images.
+offset_dists_eval: [-0.003, -0.002, -0.001, 0.0, 0.001, 0.002, 0.003]

@@ -1,0 +1,5 @@
+name: "4d"
+min_num_subapertures_to_sample: 1
+max_num_subapertures_to_sample: 1  # must be <= total_num_subapertures**2
+offset_dists: None  # 
+minibatch_size: 25  # set to total_num_subapertures**2 !!! 

@@ -1,0 +1,18 @@
+defaults:
+  - wf_rep: "explicit"
+  - prop: "asm"
+
+channel: 1
+pixel_pitch: 8e-6
+wavelengths: [633e-9, 520e-9, 473e-9]
+wavelength: ${index_integer:${.wavelengths},${.channel}}
+slm_resolution: [1080, 1920]
+high_order: 1
+sinc_attenuation: true
+prop_dist: -0.0515  # propagation distance in meters, from SLM plane to WRP plane
+
+canvas_resolution: [2000, 3000]
+angle_range_max: [0.05, 0.05]
+angle_range_min: [-0.05, -0.05]
+
+model_path: null

@@ -1,0 +1,8 @@
+name: "ImplicitWavefront"
+log2_hashmap_size: 14
+backbone: "tcnn"
+angle_aux_code: true
+tn_num_layers: 3
+tn_num_ch: 32
+dec_num_layers: 3
+dec_num_ch: 32

@@ -1,0 +1,5 @@
+name: "2d"
+min_num_subapertures_to_sample: None
+max_num_subapertures_to_sample: None
+offset_dists: None  #
+minibatch_size: 1

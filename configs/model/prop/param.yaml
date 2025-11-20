@@ -1,0 +1,17 @@
+name: "param"
+
+rank: 1
+rank_per_model: 1
+
+# LUT parameters
+lut_type: "monotone"  # or null
+lut_num_layers: 3
+lut_num_ch: 16
+lut_num_codes: [1, 0]
+
+# Incident field parameters
+inc_field_resolution: [540, 960]
+
+# DC field parameters
+dc_max: null  # If you want to constrain the magnitude of the DC field, set this to a smaller value
+dc_field_resolution: [360, 640]

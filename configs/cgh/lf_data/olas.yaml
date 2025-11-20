@@ -1,0 +1,12 @@
+name: "olas"
+data_path: data_lf/olas/parallax_0001/
+
+total_num_lf_views: [25, 25]
+load_compact_lf: true  # if true, load the compact LF for steered angle,if false, load the full LF
+lf_idx_start: None  # the starting index of the compact LF
+interval_lf: [0.0003, 0.0003]  # interval between LF views (in pupil plane) in meters
+
+
+# not used, for reference only
+# offset_dists: [-0.003,-0.002, -0.001, 0.0, 0.001, 0.002, 0.003]
+crop_to_roi: false
